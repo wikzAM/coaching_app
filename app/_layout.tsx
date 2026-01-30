@@ -1,3 +1,5 @@
+import "../global.css";
+
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Session } from '@supabase/supabase-js';
 import { Stack, useRouter, useSegments } from 'expo-router';
@@ -7,6 +9,7 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { supabase } from '@/lib/supabase'; // Ensure this path matches your file structure
+
 
 export const unstable_settings = {
   anchor: '(tabs)',
